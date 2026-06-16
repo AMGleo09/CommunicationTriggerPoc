@@ -1,0 +1,39 @@
+<form [formGroup]="form" class="mb-3">
+  <div class="input-group">
+    <input formControlName="claimNumber" class="form-control" placeholder="Enter Claim Number" />
+    <button class="btn btn-primary" type="button" (click)="fetchLogs()">Fetch Logs</button>
+  </div>
+</form>
+
+<div *ngIf="loading" class="mt-2">Loading...</div>
+
+<table  class="table table-bordered mt-3">
+  <thead class="table-dark">
+    <tr>
+      <th>Type</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>Template</th>
+      <th>Message</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let log of logs">
+      <td>{{ log.recipientEmail ? 'Email' : 'SMS' }}</td>
+      <td>{{ log.recipientEmail }}</td>
+      <td>{{ log.recipientMobile }}</td>
+      <td>{{ log.templateName }}</td>
+      <td>{{ log.messageBody }}</td>
+      <td [ngClass]="log.isSuccess ? 'text-success' : 'text-danger'">
+        {{ log.isSuccess ? 'Success' : 'Failed' }}
+      </td>
+      <td>
+        <button *ngIf="!log.isSuccess" class="btn btn-sm btn-warning" (click)="retrigger(log.id)">
+          Retrigger
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
