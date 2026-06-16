@@ -8,7 +8,7 @@ This project demonstrates how to fetch communication logs and retrigger failed o
 
 Type the claim number in the input box.
 
-![Step 1](docs/images/1.png)
+![Step 1](RetriggerMail/docs/images/1.png)
 
 ### Step 2: View Logs
 
