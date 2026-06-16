@@ -1,0 +1,6 @@
+@RetriggerMail_HostAddress = http://localhost:5125
+
+GET {{RetriggerMail_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
