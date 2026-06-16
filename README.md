@@ -1,25 +1,35 @@
-# CommunicationTriggerPoc
+# Communication POC
 
 This project demonstrates how to fetch communication logs and retrigger failed ones.
 
 ## Steps
 
 ### Step 1: Enter Claim Number
+
 Type the claim number in the input box.
 
-![Enter Claim Number](docs/images/step1.png)
+![Step 1](docs/images/1.png)
 
 ### Step 2: View Logs
-The grid shows both Email and SMS logs with their status.
 
-![Grid View](docs/images/step2.png)
+The grid displays both Email and SMS communication logs along with their current status.
+
+![Step 2](docs/images/2.png)
 
 ### Step 3: Retrigger Failed Email
-Click the **Retrigger** button on a failed log.
 
-![Retrigger Button](docs/images/step3.png)
+Locate a failed email record and click the **Retrigger** button to resend the communication.
+
+![Step 3](docs/images/3.png)
 
 ### Step 4: Success Message
-You’ll see an alert and the grid refreshes.
 
-![Success Message](docs/images/step4.png)
+After the retrigger operation completes successfully, a confirmation message is displayed and the grid is refreshed.
+
+![Step 4](docs/images/4.png)
+
+### Step 5: Updated Status
+
+Verify that the communication status has been updated in the grid.
+
+![Step 5](docs/images/5.png)
