@@ -3,18 +3,19 @@
 This project demonstrates how to fetch communication logs and retrigger failed ones.
 
 ## Steps
+![Step 1](RetriggerMail/docs/images/1.png)
 
 ### Step 1: Enter Claim Number
 
 Type the claim number in the input box.
 
-![Step 1](RetriggerMail/docs/images/1.png)
+![Step 1](RetriggerMail/docs/images/2.png)
 
 ### Step 2: View Logs
 
 The grid displays both Email and SMS communication logs along with their current status.
 
-![Step 2](docs/images/2.png)
+![Step 2](docs/images/3.png)
 
 ### Step 3: Retrigger Failed Email
 
